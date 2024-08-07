@@ -283,14 +283,6 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
-local Button = MiscTab:CreateButton({
-   Name = "Admin commands",
-   Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
-   end,
-})
-
 local Button = MainTab:CreateButton({
    Name = "Silent Aim",
    Callback = function()
@@ -356,6 +348,14 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 20;
 })
  
+   end,
+})
+
+local MiscTab = Window:CreateTab("Misc", nil) -- Title, Image
+local Button = MiscTab:CreateButton({
+   Name = "Admin commands",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/iZ64yzjE'))();
    end,
 })
 
